@@ -1,10 +1,11 @@
 FROM jupyter/scipy-notebook:latest
 
-RUN python -m pip install pandas
-RUN python -m pip install pandas-datareader
-RUN python -m pip install yfinance
-RUN python -m pip install requests-cache
-RUN python -m pip install beautifulsoup4
-RUN python -m pip install requests-cache
-RUN python -m pip install scikit-learn
-RUN python -m pip install mplfinance
+RUN python -m pip install -U pandas && \
+    python -m pip install -U pandas-datareader && \
+    python -m pip install -U yfinance && \
+    python -m pip install -U requests-cache && \
+    python -m pip install -U beautifulsoup4 && \
+    python -m pip install -U requests-cache && \
+    python -m pip install -U scikit-learn && \
+    python -m pip install -U mplfinance && \
+    python -m pip install -U nbqa[toolchain]

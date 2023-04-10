@@ -1,2 +1,3 @@
 yfinance.cache
 .ipynb_checkpoints
+.env

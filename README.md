@@ -1,10 +1,10 @@
 # Run Jupyter 
 
 ## Build the image 
-docker build . -t jupyter
+./bin/build.sh
 
 ## Run it
-MSYS_NO_PATHCONV=1 docker run --name jupyter -it --rm -p 8888:8888 -v "$(pwd):/home/jovyan/work" jupyter
+./bin/start.sh
 
 ## Lint
 docker exec -it jupyter sh -c 'nbqa pylint work/*.ipynb'

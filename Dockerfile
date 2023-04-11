@@ -10,7 +10,7 @@ RUN python -m pip install -U pandas && \
     python -m pip install -U mplfinance && \
     python -m pip install -U quandl && \
     python -m pip install -U nbqa[toolchain] && \
-    python -m pip install -U nasdaqdatalink && \
+    python -m pip install -U nasdaq-data-link && \
     pip install python-dotenv
 
 RUN jupyter notebook --generate-config -y

@@ -1,10 +1,10 @@
 # Run Jupyter 
 
-## Build the image 
-./bin/build.sh
+## Build and run
+docker-compose up -d
 
-## Run it
-./bin/start.sh
+## Crawl yahoo finance
+./bin/scrap.sh
 
 ## Lint
 docker exec -it jupyter sh -c 'nbqa pylint work/*.ipynb'
